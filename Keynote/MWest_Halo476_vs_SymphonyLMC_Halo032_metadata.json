@@ -1,0 +1,16 @@
+{
+  "npix": 600,
+  "lim_rvir": 3.0,
+  "MWest_host": "Halo476",
+  "MWest_z": 0.1652932752570797,
+  "MWest_Rvir_LMC_kpc": 142.15670776367188,
+  "MWest_MW_x_over_Rvir": 1.673383921754716,
+  "MWest_MW_y_over_Rvir": -1.9993224292766838e-16,
+  "SymphonyLMC_host": "Halo032",
+  "SymphonyLMC_z": 4.440892098500626e-16,
+  "SymphonyLMC_Rvir_host_kpc": 119.27909851074219,
+  "vmin": 17790.857148868028,
+  "vmax": 35278279.49448223,
+  "MWest_particles": "MW host + LMC tracked particles",
+  "SymphonyLMC_particles": "full snapshot high-resolution particles within 4.5 Rvir"
+}

@@ -1,0 +1,7 @@
+{
+  "z_target": 2.0,
+  "selection": "satellites currently within Rvir",
+  "mass_definition": "mu_peak = Mpeak_sub / Mpeak_host",
+  "quantity": "cumulative N(>mu_peak)",
+  "bands": "16th-84th percentile across hosts"
+}
