@@ -1,0 +1,15 @@
+One compressed HDF5 file per host. SymphonyLMC exports all branches.
+MWest exports the union of Rockstar/Symfind LMC-associated branches when both exist,
+or Rockstar-associated branches when Symfind is unavailable.
+scale_factors: (n_snap), sub_idx: (n_selected);
+rockstar/tracks: (n_selected,n_snap); rockstar/histories: (n_selected).
+symfind/tracks and symfind/histories exist ONLY when Symfind data were available.
+Missing Symfind is encoded as symfind_available=False in host_index.csv,
+and empty (NA) CSV fields for associated_symfind and ok_z0_symfind.
+MWest host files include associated_rockstar and, if present, associated_symfind.
+Host file attrs record LMC index, pre-infall snapshot, and association mode.
+Indices are symlib main-branch indices, NOT raw-HLIST halo_id.
+No z=0 survival or minimum-mass cut is applied to MWest association.
+Rockstar Rvir,LMC is the shared geometric selection boundary.
+The corrected raw-HLIST descendant-ID catalog is a distinct analysis.
+Read with h5py: f = h5py.File('filename.h5'); tracks = f['rockstar/tracks'][:].
